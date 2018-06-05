@@ -17,22 +17,38 @@
 
     <!-- Navigation -->
 
-    <nav>
-        <ul>
-            <li><a href="forside.html">Om mig</a></li>
-            <li><a href="portfolie.html">Portfolie</a></li>
-            <img src="image/HS_logo.png" alt="mit logo">
-            <li><a href="cv.html">CV</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
-    </nav>
+    <header>
+        <!--nÃ¥r menu'en er lukket vises dette-->
+        <div class="menu_lukket">
+
+            <div class="menu_image"><img src="image/HS_logo.png" alt="helena logo" width="250vw"></div>
+            <div class="menubutton">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
+            </div>
+        </div>
+
+        <!--NÃ¥r menu'en er Ã¥ben vises dette-->
+        <nav class="hidden">
+            <ul>
+                <li><a href="forside.html" class="active">Om mig</a></li>
+                <li><a href="portfolie.html">Portfolie</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <!-- Navigation slut -->
 
     <!-- Sidens indhold -->
     <main>
         <article>
-            <h1>Tema 1 // Grundlæggende Webdesign</h1>
+           <div class="tema_wrap">
+           <div class="tema_icon">
+            <img src="image/webdesign.png" alt="web design icon" width="50px"></div>
+            <div class="tema_overskrift"><h1>Tema 1 // Grundlæggende Webdesign</h1></div></div>
             <div class="sectionwrapper">
                 <div class="column_portfolie">
                     <div class="tema" id="02_01_01">
@@ -54,7 +70,7 @@
     <!-- footer slut -->
 
     <!-- Diverse ekstra, du ikke behÃ¸ver at pille ved -->
-  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="main.js"></script>
 </body>
 

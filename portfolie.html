@@ -17,40 +17,54 @@
 
     <!-- Navigation -->
 
-    <nav>
-        <ul>
-            <li><a href="forside.html">Om mig</a></li>
-            <li><a href="portfolie.html">Portfolie</a></li>
-            <img src="image/HS_logo.png" alt="mit logo">
-            <li><a href="cv.html">CV</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
-    </nav>
+    <header>
+       <!--nÃ¥r menu'en er lukket vises dette-->
+        <div class="menu_lukket">
+
+            <div class="menu_image"><img src="image/HS_logo.png" alt="helena logo" width="250vw"></div>
+            <div class="menubutton">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
+            </div>
+        </div>
+
+<!--NÃ¥r menu'en er Ã¥ben vises dette-->
+        <nav class="hidden">
+            <ul>
+                <li><a href="forside.html" class="active">Om mig</a></li>
+                <li><a href="portfolie.html">Portfolie</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <!-- Navigation slut -->
 
     <!-- Sidens indhold -->
     <main>
         <article>
-            <h1>1. Semester</h1>
+           <div class="semester">
+            <h1>1. Semester</h1></div>
             <div class="sectionwrapper">
                 <div class="column_portfolie">
-                    <div class="tema" id="1">
+                    <div class="tema tema1">
                         <a href="tema1.html">Tema 1 //<br> Grundlæggende webdesign</a>
                     </div>
                 </div>
                 <div class="column_portfolie">
-                    <div class="tema" id="2">
+                    <div class="tema tema2">
                         <a href="tema2.html">Tema 2 //<br>Grundlæggende content </a>
                     </div>
                 </div>
                 <div class="column_portfolie">
-                    <div class="tema" id="3">
+                    <div class="tema tema3">
                         <a href="tema3.html">Tema 3 // <br> Grundlæggende animation</a>
                     </div>
                 </div>
                 <div class="column_portfolie">
-                    <div class="tema" id="4">
+                    <div class="tema tema4">
                         <a href="tema4.html">Tema 4 // <br>Grundlæggende ux</a>
                     </div>
                 </div>
