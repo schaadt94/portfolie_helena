@@ -59,7 +59,7 @@ nav {
     flex-direction: row;
     flex-wrap: wrap;
     position: absolute;
-    background-color: rgb(199, 242, 232);
+    background-color: #CAE6E2;
     width: 100%;
     transform-origin: top;
     transition: transform .7s;
@@ -79,13 +79,16 @@ li {
     display: flex;
     justify-content: space-between;
     text-decoration: none;
+    border-radius: 50%;
+    width: 10vw;
+    height: 10vw;
 
 
 }
 
-a {
-    color: w;
-    margin: 2vw;
+nav a {
+    color: black;
+    margin: auto;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
 }
@@ -101,6 +104,7 @@ nav ul li a:hover {
 }
 
 
+
 .hidden {
     transform: translateY(-300px);
 }
@@ -110,6 +114,7 @@ nav ul li a:hover {
 h1 {
     font-family: 'Montserrat', sans-serif;
     margin-left: 8vw;
+    margin-top: 2vw;
     color: black;
 
 }
@@ -174,7 +179,6 @@ p {
 }
 
 
-
 .kontakt {
     display: flex;
     justify-content: center;
@@ -187,9 +191,7 @@ p {
     margin-left: 8vw;
 }
 
-.kontak a {
-    color: black;
-}
+
 
 .kontakt p {
     margin-top: 3vw
@@ -227,11 +229,12 @@ iframe {
 .tema_wrap {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 2vw;
 }
 
 .tema_icon {
     margin-left: 8vw;
-    margin-top: 1vw;
+    margin-top: 1.1vw;
 }
 
 .tema_overskrift h1 {
@@ -242,25 +245,27 @@ iframe {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    padding: 5px;
-
 }
 
+
 .tema a {
-    font-size: 1em;
+    font-size: 0.9em;
     padding-left: 15px;
     margin-left: 0px;
+
 }
 
 .tema a:link,
 a:visited {
 
-    padding-top: 55px;
+    padding-top: 80px;
     text-decoration: none;
     display: flex;
     background-color: #d8faee;
     width: 200px;
     height: 135px;
+    margin: 5px;
+    color: black;
 }
 
 .tema a:hover,
@@ -277,12 +282,15 @@ a:active {
 }
 
 .velkommen p {
-    width: 40vw;
+    width: 37vw;
     margin-top: 5vw;
+    margin-left: 8vw
 }
 
 .velkommen img {
+    width: 37vw;
     margin-left: 8vw;
+    border-radius: 50%
 }
 
 
@@ -299,11 +307,16 @@ footer {
 .column_content {
     width: 260px;
 
+
+
 }
 
 .column_content p {
     margin-left: 0vw;
-    line-height: 1.4em
+    line-height: 1.4em;
+    text-align: center;
+
+
 }
 
 
@@ -312,10 +325,202 @@ footer {
 }
 
 b {
-    color: #8ce2cd;
+    color: #79ceb9;
+    font-size: 1.4em
 }
 
 .semester {
     margin-top: 2vw;
     margin-left: 6vw;
+}
+
+.box {
+    margin: 2vw;
+}
+
+.column_portfolie1 {
+    background-color: #d8faee;
+    border-radius: 50%;
+    width: 13vw
+}
+
+.box a {
+    background-color: #d8faee;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+
+}
+
+.box a:hover {
+    background-color: #b6e8dd;
+}
+
+.txt_cv b {
+    font-size: 1.1em;
+}
+
+.txt_cv p {
+    margin-left: 8vw;
+}
+
+.txt_cv h1 {
+    margin-top: 0vw;
+}
+
+.txt_cv {
+    position: relative;
+    animation-name: go_room;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+
+}
+
+@keyframes go_room {
+    from {
+        left: -80vw;
+    }
+    to {
+        left: 0vw;
+    }
+}
+
+.kompetancer h1 {
+    margin-top: 0vw;
+    margin-left: 2.9vw;
+}
+
+.kompetancer {
+    display: flex;
+    margin-left: 5.3vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    position: relative;
+    animation-name: go_room;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+
+@keyframes go_room {
+    from {
+        left: -80vw;
+    }
+    to {
+        left: 0vw;
+    }
+}
+
+.kompetancer img {
+    width: 170px;
+
+    margin-top: 55px;
+}
+
+
+
+.kompetancer p {
+    line-height: 1.5;
+    margin-left: 8vw;
+}
+
+
+
+.person_billede {
+    justify-content: center;
+    position: relative;
+    animation-name: go_room;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+
+.person_billede img {
+    margin-left: 8vw;
+}
+
+@keyframes go_room {
+    from {
+        left: -80vw;
+    }
+    to {
+        left: 0vw;
+    }
+}
+
+
+.person_billede img {
+    width: 50vw;
+    height: 35vw
+}
+
+
+.sectionwrapper2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 7vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: relative;
+    width: 10vw;
+    margin-top: 2vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 5vw;
+}
+
+. container img {
+    width: 5vw;
+    height: 5vw;
+}
+
+.image {
+    display: block;
+    width: 150px;
+    height: 150px;
+    justify-content: space-around;
+
+
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 1vw;
+    left: 0;
+    right: 0;
+    height: 150px;
+    width: 150px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #e1f5f2;
+    border-radius: 50%;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.text a {
+    color: black;
+    font-size: 0.7em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-family: 'Montserrat', sans-serif;
+    margin: 0vw;
+    text-decoration: none;
 }
