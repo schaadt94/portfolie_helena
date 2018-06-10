@@ -15,6 +15,10 @@ body {
     margin-top: 1vw
 }
 
+.menu_image img {
+    width: 320px;
+}
+
 .menu_lukket img {
     z-index: 3;
 }
@@ -22,7 +26,7 @@ body {
 .menubutton {
     width: 34px;
     height: 35px;
-    padding-top: 35px;
+    padding-top: 50px;
 
     display: flex;
     flex-direction: column;
@@ -68,7 +72,7 @@ nav {
     z-index: 5;
 }
 
-ul {
+nav ul {
     display: flex;
     flex-wrap: wrap;
     margin-left: 5vw;
@@ -77,35 +81,34 @@ ul {
 
 }
 
-li {
-    display: flex;
-    justify-content: space-between;
-    text-decoration: none;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-
-
+nav ul li {
+    list-style: none;
 }
 
-nav a {
+nav ul li a {
     color: black;
     margin: auto;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
-}
-
-nav ul li:hover {
-
-    background-color: rgba(255, 255, 255, 0.51);
+    text-decoration: none;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    display: flex;
+    justify-content: space-around;
 }
 
 nav ul li a:hover {
-    background-color: rgba(240, 248, 255, 0);
+
+    background-color: rgba(255, 255, 255, 0.51);
     color: black;
 }
 
-
+/*nav ul li a:hover {
+    background-color: rgba(240, 248, 255, 0);
+    color: black;
+}*/
 
 .hidden {
     transform: translateY(-400px);
@@ -142,6 +145,7 @@ p {
     line-height: 1.3em;
 }
 
+
 .video_txt p {
     font-family: 'Montserrat', sans-serif;
     margin-left: 8vw;
@@ -153,11 +157,6 @@ p {
 
 .video_txt li {
     font-family: 'Montserrat', sans-serif;
-    margin-left: 8vw;
-    color: black;
-    margin-left: 2vw;
-    width: 40vw;
-    height: 2vw;
 }
 
 .video_txt {
@@ -485,40 +484,24 @@ b {
     flex-wrap: wrap;
     flex-direction: row;
     position: relative;
-    width: 10vw;
-    margin-top: 2vw;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    margin-bottom: 5vw;
+    width: 20%;
+    justify-content: space-around;
+    margin-bottom: 10vw;
 }
 
-. container img {
-    width: 5vw;
-    height: 5vw;
-}
+
 
 .image {
     display: flex;
     width: 150px;
     height: 150px;
-    justify-content: space-around;
-
-
 
 }
 
-.image img {
 
-    width: 150px;
-    height: 150px;
-}
 
 .overlay {
     position: absolute;
-    top: 0;
-    bottom: 1vw;
-    left: 0;
-    right: 0;
     height: 150px;
     width: 150px;
     opacity: 0;
@@ -542,4 +525,136 @@ b {
     font-family: 'Montserrat', sans-serif;
     margin: 0vw;
     text-decoration: none;
+}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 992px) {
+    .container {
+        width: 33%;
+    }
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {
+    .menu_image img {
+        width: 220px;
+        margin-top: 17px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .image {
+        width: 225px;
+        height: 225px;
+    }
+
+    .overlay {
+        height: auto;
+        width: 100%;
+        margin: 15px 0 40px 0;
+        text-align: center;
+        position: relative;
+        opacity: 1;
+        background-color: #ffffff;
+    }
+    .overlay .text a {
+        font-size: 1em;
+        position: inherit;
+    }
+    .tema_wrap {
+        flex-wrap: nowrap;
+    }
+
+    .video {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    iframe {
+        margin: 0 0 20px 0;
+        width: 94%;
+    }
+
+    .video_txt p {
+        margin-left: 4vw;
+        margin-right: 4vw;
+    }
+
+    .velkommen {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        text-align: center;
+    }
+
+    .velkommen_image {
+
+        display: inline-block;
+        justify-content: space-around;
+    }
+
+    .velkommen_image img {
+        width: 80%;
+        margin: 4vw;
+    }
+
+    .velkommen_txt {
+        margin: 0 4vw 0 4vw;
+    }
+
+    .velkommen_txt p {
+        width: 80%;
+    }
+
+    .kontakt img {
+        border-radius: 50%;
+        margin-left: 0vw;
+    }
+
+    .kontakt {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+        text-align: center;
+    }
+
+    .kontakt p {
+        margin-left: 0vw;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        /* margin-left: 5vw; */
+        width: 370px;
+        justify-content: space-around;
+        padding-left: 0;
+    }
+
+    nav ul li {
+        width: 100%
+    }
+
+    nav ul li a {
+        height: 45px;
+        line-height: 45px;
+    }
+
+    .person_billede img {
+        width: 85%;
+
+        height: inherit;
+    }
+
+    footer p {
+        margin: 20px 0 10px 0;
+    }
 }
