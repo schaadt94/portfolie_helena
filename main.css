@@ -498,13 +498,19 @@ b {
 }
 
 .image {
-    display: block;
+    display: flex;
     width: 150px;
     height: 150px;
     justify-content: space-around;
 
 
 
+}
+
+.image img {
+
+    width: 150px;
+    height: 150px;
 }
 
 .overlay {
