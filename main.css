@@ -539,7 +539,7 @@ b {
 
 @media (max-width: 768px) {}
 
-@media (max-width: 576px) {
+@media (max-width: 376px) {
     .menu_image img {
         width: 220px;
         margin-top: 17px;
