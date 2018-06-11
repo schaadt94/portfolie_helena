@@ -645,7 +645,6 @@ b {
     nav ul {
         display: flex;
         flex-wrap: wrap;
-        /* margin-left: 5vw; */
         width: 370px;
         justify-content: space-around;
         padding-left: 0;
